@@ -1,4 +1,5 @@
 # Static Website project Visual Studio 2022
 
-Шаблон проекта статичского вебсайта
+[РЁР°Р±Р»РѕРЅ РїСЂРѕРµРєС‚Р° СЃС‚Р°С‚РёС‡СЃРєРѕРіРѕ РІРµР±СЃР°Р№С‚Р°](https://creativcode-ru.github.io/static-website/)  
+
 
