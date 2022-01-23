@@ -12,3 +12,6 @@ C помощью Visual Studio 2022 сделаем проект для разр�
        <img src="https://img.youtube.com/vi/tTR5zbVvrf4/mqdefault.jpg" width="320" height="180" alt="visual studio 2022 web site">
    </a>
 </p>
+
+Дополнение:  
+Если в проекте, при создании нового файла, у вас нет html css  шаблонов, то запустите  Visual Studio Instaler, и добавьте нагрузку Node.js
