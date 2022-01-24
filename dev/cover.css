@@ -30,9 +30,9 @@ body {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-    color: #333;
+    color: #11062C;
     text-shadow: none; /* Prevent inheritance from `body` */
-    background-color: #CAFDFE;
+    /*background-color: #CAFDFE;*/
 }
 
    /* .btn-secondary:hover,
