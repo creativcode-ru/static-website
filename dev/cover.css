@@ -4,8 +4,8 @@
 
 /*html, */
 body {
-    /*  height: 100%;
-    width: 100%;*/
+    /*  height: 100%;*/
+    width: 100%;
     background: linear-gradient(70deg, #11062C 0%, #210D3E 25%, #BE4EF8 85%, #C451FF 100%);
     background-size: 200%;
     animation: gradient 12s infinite linear;
