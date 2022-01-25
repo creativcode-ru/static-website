@@ -48,7 +48,7 @@ body {
 
 body {
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-    /*box-shadow: inset 0 0 3rem rgba(0, 0, 0, .3);*/
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, .3);
 }
 
 .cover-container {
@@ -70,6 +70,16 @@ body {
         max-width: 420px;
         min-width: 144px;
     }
+    .lead {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .h-100 {
+        height: 600px !important;
+    }
+    
 }
 
 
