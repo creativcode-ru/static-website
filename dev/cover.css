@@ -2,8 +2,7 @@
  * анимированный градиент
  */
 
-/*html, */
-body {
+html {
     /*  height: 100%;*/
     width: 100%;
     background: linear-gradient(70deg, #11062C 0%, #210D3E 25%, #BE4EF8 85%, #C451FF 100%);
@@ -32,14 +31,7 @@ body {
 .btn-secondary:focus {
     color: #11062C;
     text-shadow: none; /* Prevent inheritance from `body` */
-    /*background-color: #CAFDFE;*/
 }
-
-   /* .btn-secondary:hover,
-    .btn-secondary:focus {
-        color: #333;
-        background-color: #00F9FF;
-    }*/
 
 
 /*
@@ -93,6 +85,4 @@ body {
 .mt-n8 {
     margin-top: -3rem !important;
 }
-
-
 
