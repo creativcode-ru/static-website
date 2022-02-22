@@ -41,38 +41,73 @@
             z-index: -100;
         }
         .cover-img {
-            background-position: 50% 50%;
             background-size: cover;
             background-repeat: no-repeat;
             background-image: url(1.jpg);
-            /*position: fixed;*/
-           /* top: 0px;
-            left: 0px;*/
+            width: 100%;
+            height: 100%;
+            background-position: 50% 50%; /*размещение по центру*/
+
+            will-change: transform, opacity; /*повысить отзывчивость страницы*/
+            pointer-events: none; /*не обрабатывет события мышью*/
+        }
+
+        .cover-img-lab {
+            background-position: 50% 50%; /*размещение по центру*/
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(1.jpg);
+            margin-top: 0px;
+            /*position: fixed; -- неподвижный фон*/
+            /*top: 0px;
+            left: 0px; -- не влияет...*/
             width: 100%;
             height: 100%;
             overflow: hidden;
-            pointer-events: none;
-            transform-style: preserve-3d;
-            backface-visibility: hidden;
-            will-change: transform, opacity;
-            margin-top: 0px;
-            transform: translate3d(0px, 0px, 0px);
+            pointer-events: none; /*не обрабатывет события мышью*/
+            
+            transform-style: preserve-3d; /*Показывает, что дочерний элемент должен быть спозиционирован в 3D-пространстве.*/
+            backface-visibility: hidden; /*3d - видно ли заднюю грань элемента, когда он повёрнут к пользователю.*/
+            will-change: transform, opacity; /*повысить отзывчивость страницы*/
+            transform: translate3d(0px, 0px, 0px); /*помещает в центр*/
         }
 
+        
 
     </style>
 
 </head>
 <body class="">
 
-
     <div class="cover-container">
         <div class="cover-img">
         </div>
     </div>
 
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container ">
+
+            <a class="navbar-brand" href="#">Fixed navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container">
-        <div class="px-4 py-5 my-5 text-center border">
+        <div class="px-4 py-5 my-5 text-center border vh-100 d-flex flex-column">
             <h1 class="display-5 fw-bold">Заголовок страницы</h1>
             <div class="col-lg-6 mx-auto">
                 <p class="lead mb-4">Быстро создавайте и настраивайте адаптивные сайты для мобильных устройств с помощью Bootstrap, самого популярного в мире внешнего интерфейса с открытым исходным кодом, включающего переменные и примеси Sass, адаптивную сетку, множество готовых компонентов и мощные плагины JavaScript.</p>
@@ -81,6 +116,7 @@
                     <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
                 </div>
             </div>
+            <div class="mt-auto">Низ контейнера</div>
         </div>
     </div>
 
