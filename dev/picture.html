@@ -46,9 +46,11 @@
             background-image: url(1.jpg);
             width: 100%;
             height: 100%;
-            background-position: 50% 50%; /*размещение по центру*/
+            background-position: 50% 50%; /*размещение картинки по центру*/
 
-            will-change: transform, opacity; /*повысить отзывчивость страницы*/
+            will-change: transform, opacity; /*повысить отзывчивость страницы https://frontender.info/css-will-change-property/ */
+            transform: translate3d(0px, 0px, 0px); /*слой аппаратного ускорения браузера при трансформации*/
+
             pointer-events: none; /*не обрабатывет события мышью*/
         }
 
@@ -65,11 +67,12 @@
             height: 100%;
             overflow: hidden;
             pointer-events: none; /*не обрабатывет события мышью*/
-            
+
             transform-style: preserve-3d; /*Показывает, что дочерний элемент должен быть спозиционирован в 3D-пространстве.*/
             backface-visibility: hidden; /*3d - видно ли заднюю грань элемента, когда он повёрнут к пользователю.*/
-            will-change: transform, opacity; /*повысить отзывчивость страницы*/
-            transform: translate3d(0px, 0px, 0px); /*помещает в центр*/
+            
+            will-change: transform, opacity; /*повысить отзывчивость страницы https://frontender.info/css-will-change-property/ */
+            transform: translate3d(0px, 0px, 0px); /*слой аппаратного ускорения браузера при трансформации*/
         }
 
         
@@ -79,12 +82,15 @@
 </head>
 <body class="">
 
-    <div class="cover-container">
-        <div class="cover-img">
-        </div>
+    <div class="cover-container cover-img">
     </div>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <!--<div class="cover-container">
+        <div class="cover-img">
+        </div>
+    </div>-->
+
+    <!--<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container ">
 
             <a class="navbar-brand" href="#">Fixed navbar</a>
@@ -105,7 +111,8 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav>-->
+
     <div class="container">
         <div class="px-4 py-5 my-5 text-center border vh-100 d-flex flex-column">
             <h1 class="display-5 fw-bold">Заголовок страницы</h1>
